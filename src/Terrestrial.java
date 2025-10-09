@@ -1,10 +1,13 @@
-public class Terrestrial extends Animal {
+public non-sealed class Terrestrial extends Animal {
     protected int nbrLegs;
-
-    public Terrestrial() {}
 
     public Terrestrial(int nbrLegs) {
         this.nbrLegs = nbrLegs;
+    }
+
+    @Override
+    public void eat() {
+        System.out.println("This terrestrial animal eats plants or meat.");
     }
 
     @Override

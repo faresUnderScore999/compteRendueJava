@@ -1,7 +1,5 @@
-public class Penguin extends Aquatic {
+public final class Penguin extends Aquatic {
     protected float swimmingDepth;
-
-    public Penguin() {}
 
     public Penguin(String habitat, float swimmingDepth) {
         super(habitat);
@@ -9,7 +7,7 @@ public class Penguin extends Aquatic {
     }
 
     @Override
-    public String toString() {
-        return "Penguin [habitat=" + habitat + ", swimmingDepth=" + swimmingDepth + "]";
+    public void eat() {
+        System.out.println("Penguin eats fish!");
     }
 }
